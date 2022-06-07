@@ -12,4 +12,14 @@ In order to accomplish this the following will be created:
 
 # Results
 
+ * To review how many helpful and non-helpful Vines reviws first the data needed to be reviewed, then the data needed to be dropped of missing values. According to the prompt, helpful revies were determined by having >50% of the votes as "helpful" so therefore a helpful_reviews_df datafram was created. 
 
+To review how many helpful and non-helpful Vine reviews were 5 stars, the following script was written:
+ * five_star_vine_reviews = vine_helpful_reviews_df.filter("star_rating=='5'").count()
+ * five_star_not_vine_reviews = not_vine_helpful_reviews_df.filter("star_rating=='5'").count()
+ * It was determined that The number of helpful Vine reviews that were 5 stars was 48 and the number of helpful non-Vine reviews were 15,663
+
+The percentage of helpful and non-helpful Vine reviews with 5 stars was also done by writing the following script: 
+ * percent_five_star_vine_reviews = (five_star_vine_reviews/total_num_helpful_vine_reviews)*100
+ * percent_five_star_not_vine_reviews = (five_star_not_vine_reviews/total_num_helpful_not_vine_reviews)*100
+ * It was determined that in the video game category and looking at reviews that meet our "helpful" criteria, Vine reviewers provided 5-stars 51% of the time, while non-Vine reviewers provided 5-stars just less than 39% of the time.
