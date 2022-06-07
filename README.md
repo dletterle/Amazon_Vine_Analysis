@@ -14,6 +14,8 @@ In order to accomplish this the following will be created:
 
  * To review how many helpful and non-helpful Vines reviws first the data needed to be reviewed, then the data needed to be dropped of missing values. According to the prompt, helpful revies were determined by having >50% of the votes as "helpful" so therefore a helpful_reviews_df datafram was created. 
 
+
+
 To review how many helpful and non-helpful Vine reviews were 5 stars, the following script was written:
  * five_star_vine_reviews = vine_helpful_reviews_df.filter("star_rating=='5'").count()
  * five_star_not_vine_reviews = not_vine_helpful_reviews_df.filter("star_rating=='5'").count()
@@ -23,3 +25,7 @@ The percentage of helpful and non-helpful Vine reviews with 5 stars was also don
  * percent_five_star_vine_reviews = (five_star_vine_reviews/total_num_helpful_vine_reviews)*100
  * percent_five_star_not_vine_reviews = (five_star_not_vine_reviews/total_num_helpful_not_vine_reviews)*100
  * It was determined that in the video game category and looking at reviews that meet our "helpful" criteria, Vine reviewers provided 5-stars 51% of the time, while non-Vine reviewers provided 5-stars just less than 39% of the time.
+
+# Summary 
+
+Based on this analysis of the video game category, the data shows that Vine reviewers provide 5-star reviews at a higher rate than non-vine reviewers. However, more analysis would need to be undertaken before one could make a statement about bias in the Vine program. We would need to perform similar analyses across additional categories, not just a single category. Additionally we would need to perform statistical analysis to understand if the differences we see are statistically significant given the sample size.
