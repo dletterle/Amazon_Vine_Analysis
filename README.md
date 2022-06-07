@@ -8,3 +8,8 @@ In order to accomplish this the following will be created:
   * Deliverable 1: Perform ETL on Amazon Product Reviews
   * Deliverable 2: Determine Bias of Vine Reviews
   * Deliverable 3: A Written Report on the Analysis (README.md)
+
+
+# Results
+
+
